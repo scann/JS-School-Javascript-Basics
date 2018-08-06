@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User info with alert, confirm, prompt</title>
+</head>
+<body>
+	<script>
+		let userName = prompt('What is your name?', 'Name');
+		if (!userName) {
+			userName = 'Name is not entered'
+		}
+		let userAge = prompt('How old are you?', '25');
+		if (!userAge) {
+			userAge = 'Age is not entered';
+		}
+		let userAddress = prompt('Where do you live?', 'Kiev');
+		if(!userAddress) {
+			userAddress = 'Address is not entered';
+		} 
+		let jobTitle = prompt('What is your job title?', 'Unemployed');
+		if (!jobTitle) {
+			jobTitle = 'Unemployed';
+		} 
+		let phoneNumber = prompt('What is your phone number?', '0501234578');
+		if (!phoneNumber) {
+			phoneNumber = 'No phone number';
+		}
+		const isAdmin = confirm('Are you an administrator?')? 'YES' : 'NO';
+		const isUserAccountProtected = confirm('Do you have your password set?')? 'YES': 'NO';
+		alert(
+			'--Current user profile--\n' +
+			'User name: ' + userName + '\n' +
+			'User age: '  + userAge + '\n' + 
+			'User job title: ' + jobTitle + '\n' +
+			'User phone number: ' + phoneNumber + '\n' +
+			'Administrator: ' + isAdmin + '\n' +
+			'Password protected account: ' + isUserAccountProtected + '\n'
+			);
+	</script>
+</body>
+</html>
