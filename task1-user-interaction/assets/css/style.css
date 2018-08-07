@@ -1,0 +1,17 @@
+h1,
+.name, 
+.address,
+.birthdate {
+	font-family: 'Courier', sans-serif;	
+	margin: 10px 0;
+}
+h1 {
+	font-size: 40px;
+}	
+.name {
+	font-size: 30px;	
+}
+.address,
+.birthdate {
+	font-size: 25px;
+}
